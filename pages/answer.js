@@ -1,10 +1,10 @@
 import { useRouter } from "next/router";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Records from "../components/Records";
 import Pagination from "../components/Pagination";
 
-const answer = () => {
+const Answer = () => {
   const [records, setRecords] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
@@ -33,7 +33,7 @@ const answer = () => {
   return (
     <div className=" mx-8 ">
       <h1 className="mt-4 font-bold flex justify-center">
-        *Note:* The console shouldn't be reading and pulling in more records
+        Note: The console shouldn&apos;t be reading and pulling in more records
         than the 10 records (page size).
       </h1>
       <hr className="my-4" />
@@ -67,4 +67,4 @@ const answer = () => {
   );
 };
 
-export default answer;
+export default Answer;
