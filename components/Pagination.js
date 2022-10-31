@@ -1,12 +1,6 @@
 import React from "react";
 
-export default function Pagination({
-  postsPerPage,
-  totalPosts,
-  paginateFront,
-  paginateBack,
-  currentPage,
-}) {
+export default function Pagination({ paginateFront, paginateBack }) {
   return (
     <div className="py-2">
       <nav className="block"></nav>
